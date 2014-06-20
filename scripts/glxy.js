@@ -367,6 +367,12 @@ define(["./particle", "./color", "./options", "./event"],
         },
 
         start: function () {
+			p = new Particle({
+                    x: (canvas.width)/2 - panx,
+                    y: (canvas.height)/2 - pany,
+                    r: 70
+                });
+			addParticle(p);
             drawLoop();
         }
     };
